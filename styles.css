@@ -1,0 +1,72 @@
+
+:root{
+  --blue:#0d3ea6; --teal:#0aa39a; --coral:#ff4c2f; --ink:#172033;
+  --muted:#667085; --bg:#f7fafb; --card:#ffffff; --line:#e7edf1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:white}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1180px,92%);margin:auto}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;gap:28px}
+.brand img{height:56px;width:auto}
+nav{display:flex;gap:26px;margin-left:auto;font-weight:700;font-size:14px}
+nav a:hover{color:var(--teal)}
+.wa-btn,.wa-large{background:var(--teal);color:white;padding:13px 18px;border-radius:14px;font-weight:800}
+.hero{background:linear-gradient(180deg,#fff,#f8fbfb)}
+.hero-grid{min-height:520px;display:grid;grid-template-columns:42% 58%;align-items:stretch}
+.hero-copy{padding:72px 20px 64px 0;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{color:var(--teal);font-weight:900;letter-spacing:.12em;font-size:13px}
+h1{font-size:64px;line-height:.98;margin:12px 0 18px;color:var(--blue)}
+.hero-copy p{font-size:20px;line-height:1.5;color:var(--muted);max-width:560px}
+.hero-actions{display:flex;gap:12px;margin:24px 0 22px;flex-wrap:wrap}
+.primary,.secondary{padding:14px 20px;border-radius:14px;font-weight:800}
+.primary{background:var(--blue);color:white}
+.secondary{border:1px solid var(--line);background:white}
+.full{display:block;text-align:center}
+.trust-row{display:flex;gap:18px;flex-wrap:wrap;color:#344054;font-size:14px;font-weight:700}
+.hero-image{background:url("assets/hero.jpg") center/cover no-repeat;border-bottom-left-radius:42px}
+.section{padding:76px 0}
+.section-head{text-align:center;max-width:780px;margin:0 auto 34px}
+.section-head h2,.contact-box h2{font-size:38px;margin:10px 0 12px;color:var(--blue)}
+.section-head p,.contact-box p{color:var(--muted);line-height:1.6}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 12px 30px rgba(16,24,40,.07)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card-body{padding:18px}
+.card h3{margin:0 0 8px;color:var(--blue)}
+.card p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}
+.payment-section{background:var(--bg)}
+.payment-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:24px}
+.pay-card{background:white;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 12px 30px rgba(16,24,40,.06)}
+.badge{display:inline-block;background:var(--blue);color:white;font-weight:900;padding:8px 12px;border-radius:10px}
+.pay-card h3{font-size:26px;color:var(--blue);margin:18px 0}
+.bank-data{display:grid;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.bank-data>div{display:grid;grid-template-columns:100px 1fr auto;gap:12px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line)}
+.bank-data>div:last-child{border-bottom:none}
+.bank-data span{color:var(--muted);font-size:13px}
+.bank-data strong{overflow-wrap:anywhere}
+.copy{border:0;background:#eef6ff;color:var(--blue);padding:8px 10px;border-radius:9px;font-weight:800;cursor:pointer}
+.small{font-size:13px;color:var(--muted);line-height:1.5}
+.card-icon{font-size:48px}
+.info-pill{display:inline-block;background:#e9fbf8;color:#087b73;padding:10px 14px;border-radius:999px;font-weight:800;margin:8px 0}
+.contact-section{padding-top:54px}
+.contact-box{display:flex;justify-content:space-between;gap:24px;align-items:center;background:linear-gradient(135deg,#f4fffd,#f7f9ff);padding:34px;border-radius:26px;border:1px solid var(--line)}
+footer{border-top:1px solid var(--line);padding:24px 0}
+.footer-grid{display:flex;align-items:center;justify-content:space-between;color:var(--muted)}
+.footer-grid img{height:54px;width:auto}
+@media (max-width:900px){
+  nav{display:none}.nav{height:68px}.brand img{height:50px}
+  .hero-grid{grid-template-columns:1fr}.hero-copy{padding:48px 0 30px}.hero-image{min-height:330px;border-radius:24px}
+  h1{font-size:48px}.cards{grid-template-columns:repeat(2,1fr)}
+  .payment-grid{grid-template-columns:1fr}.contact-box{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:560px){
+  .wa-btn{font-size:0;padding:12px}.wa-btn:after{content:"WhatsApp";font-size:13px}
+  h1{font-size:40px}.hero-copy p{font-size:17px}.cards{grid-template-columns:1fr}
+  .section{padding:56px 0}.section-head h2,.contact-box h2{font-size:31px}
+  .bank-data>div{grid-template-columns:1fr auto}.bank-data span{grid-column:1/-1}
+  .footer-grid{flex-direction:column;gap:10px;text-align:center}
+}
