@@ -1,20 +1,15 @@
-POSTRES ZINTZÚN — SITIO GITHUB PAGES
+POSTRES ZINTZÚN — PAQUETE FINAL
 
-Archivos principales:
-- index.html
-- styles.css
-- config.js
-- script.js
-- assets/
+Esta versión incluye:
+- 4 fotografías web nuevas, claras y uniformes
+- hero nuevo sin estirar ni recortar agresivamente
+- diseño responsive para móvil
+- sin precios
+- BBVA + TPV + WhatsApp
 
-Datos configurados:
-Banco: BBVA
-Titular: Abraham Guzmán Aguirre
-Cuenta: 1581956810
-CLABE: 012180015819568102
-WhatsApp: 461 324 1712
-Pago con tarjeta: disponible en el local mediante TPV.
-
-IMPORTANTE:
-Sube el CONTENIDO de esta carpeta a la raíz del repositorio. index.html debe verse directamente en la raíz.
-Después: Settings > Pages > Deploy from a branch > main > /(root).
+Para actualizar GitHub:
+1. Descomprime este ZIP.
+2. En tu repositorio postres-zintzun-pagos, usa Add file > Upload files.
+3. Sube y reemplaza TODO el contenido de este paquete.
+4. Haz Commit changes.
+5. GitHub Pages se actualizará automáticamente.
